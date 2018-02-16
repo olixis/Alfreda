@@ -19,18 +19,14 @@ export class Alfreda {
         exec(playCmd)
       });
   }
-  readImage(){
+  readImage(path){
     const vision = require('@google-cloud/vision');
     const client = new vision.ImageAnnotatorClient();
     
-    /**
-     * TODO(developer): Uncomment the following line before running the sample.
-     */
-     const fileName = 'jean.png';
-    
+  
     // Performs text detection on the local file
     client
-      .textDetection(fileName)
+      .textDetection(path)
       .then(results => {
         const fullTextAnnotation = results[0].fullTextAnnotation;
         console.log(fullTextAnnotation.text);

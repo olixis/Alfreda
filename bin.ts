@@ -15,6 +15,11 @@ program
     .description('Make Alfreda Speak (max 240 chars)')
     .action(text => alfreda.speak(text))
 
+program
+    .command('readImage <path>')
+    .alias('ri')
+    .description('Make Alfreda read one image and return the text in it')
+    .action(path => alfreda.readImage(path))
 
 
 
