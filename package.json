@@ -12,9 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/vision": "^0.15.2",
-    "@types/node": "^9.4.6",
-    "child-process-async": "^1.0.1",
-    "commander": "^2.14.1",
     "google-tts-api": "0.0.2",
     "got": "^8.1.0"
   }
